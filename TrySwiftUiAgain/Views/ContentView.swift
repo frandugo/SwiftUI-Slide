@@ -19,7 +19,7 @@ struct ContentView: View {
         VStack {
             HStack(){
                 VStack(){
-                    Text(" Solo tienes que hacer scrol!!!")
+                    Text(" Solo tienes que hacer scrol!!!".uppercased())
                         .bold()
                         .kerning(2)
                         .multilineTextAlignment(.center)
@@ -36,11 +36,18 @@ struct ContentView: View {
                         Text("100")
                             .font(.system(size: 18, weight: .bold))
                     }
+                    .padding()
                     Button(action: {
                         isAlertVisible = true
                     }) {
-                        Text("Hit me!!!")
+                        Text("Hit me!!!".uppercased())
+                            .bold()
+                            .font(.title3)
                     }
+                    .padding(.all)
+                    .background(Color.blue)
+                    .foregroundColor(Color.white)
+                    .cornerRadius(20.0)
                     .alert(
                         isPresented: $isAlertVisible,
                         content: {
