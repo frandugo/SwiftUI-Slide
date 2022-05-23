@@ -22,22 +22,16 @@ struct ContentView: View {
             VStack {
                 HStack(){
                     VStack(){
-                        Text(" Solo tienes que hacer scrol!!!".uppercased())
-                            .bold()
-                            .kerning(2)
-                            .multilineTextAlignment(.center)
-                            .lineSpacing(4.0)
-                            .font(.footnote)
-                            .padding(.bottom, 10.0)
-                        Text(String(game.target))
-                            .kerning(-1.0)
-                            .font(.system(size: 36, weight: .black))
+                        InstrunctionText(text: "Solo tienes que hacer scrol!!!")
+                        BigNumberText(text: String(game.target))
                         HStack(){
                             Text("1")
                                 .font(.system(size: 18, weight: .bold))
+                                .foregroundColor(Color("TextColor"))
                             Slider(value: $sliderValue, in: 1.0...100.0)
                             Text("100")
                                 .font(.system(size: 18, weight: .bold))
+                                .foregroundColor(Color("TextColor"))
                         }
                         .padding()
                         Button(action: {
@@ -75,6 +69,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
         ContentView()
             .previewLayout(.fixed(width: 580, height: 320))
     }

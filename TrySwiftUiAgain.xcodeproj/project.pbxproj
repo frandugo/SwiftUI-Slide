@@ -15,6 +15,7 @@
 		0A3D8950281B382B0096AE29 /* TrySwiftUiAgainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D894F281B382B0096AE29 /* TrySwiftUiAgainTests.swift */; };
 		0A3D895A281B382B0096AE29 /* TrySwiftUiAgainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8959281B382B0096AE29 /* TrySwiftUiAgainUITests.swift */; };
 		0A3D895C281B382B0096AE29 /* TrySwiftUiAgainUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D895B281B382B0096AE29 /* TrySwiftUiAgainUITestsLaunchTests.swift */; };
+		0A488167283BCE610052F132 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A488166283BCE610052F132 /* TextViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		0A3D8955281B382B0096AE29 /* TrySwiftUiAgainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrySwiftUiAgainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3D8959281B382B0096AE29 /* TrySwiftUiAgainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrySwiftUiAgainUITests.swift; sourceTree = "<group>"; };
 		0A3D895B281B382B0096AE29 /* TrySwiftUiAgainUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrySwiftUiAgainUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A488166283BCE610052F132 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				0A3D8940281B38290096AE29 /* ContentView.swift */,
+				0A488166283BCE610052F132 /* TextViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3D8941281B38290096AE29 /* ContentView.swift in Sources */,
+				0A488167283BCE610052F132 /* TextViews.swift in Sources */,
 				0A15652D282CA12800F74C23 /* Game.swift in Sources */,
 				0A3D893F281B38290096AE29 /* TrySwiftUiAgainApp.swift in Sources */,
 			);
