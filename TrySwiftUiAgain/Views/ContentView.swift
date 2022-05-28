@@ -71,7 +71,11 @@ struct HitMeButton: View{
             }
         )
         .foregroundColor(Color.white)
-        .cornerRadius(20.0)
+        .cornerRadius(21.0)
+        .overlay(
+            RoundedRectangle(cornerRadius: 21.0)
+                .strokeBorder(Color.white, lineWidth: 2.0)
+        )
         .alert(
             isPresented: $isAlertVisible,
             content: {
@@ -87,8 +91,9 @@ struct HitMeButton: View{
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
         ContentView()
+            .preferredColorScheme(.dark)
             .previewLayout(.fixed(width: 580, height: 320))
     }
 }
