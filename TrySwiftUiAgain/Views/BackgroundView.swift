@@ -16,7 +16,10 @@ struct BackgroundView: View {
             BottomView(game: $game)
         }
         .padding()
-        RingsView()
+        .background(
+            RingsView()
+        )
+        
     }
 }
 
@@ -60,7 +63,9 @@ struct NumberView: View {
 
 
 struct RingsView: View {
+    @Environment(\.colorScheme) var colorScheme
     var body: some View{
+        let opacity = colorScheme == .dark ? 0.1 : 0.3
         ZStack {
             Color("BackgroundColor")
                 .edgesIgnoringSafeArea(.all)
@@ -69,7 +74,7 @@ struct RingsView: View {
                 Circle()
                     .stroke(lineWidth: 20.0)
                     .fill(
-                        RadialGradient(gradient: Gradient(colors: [Color("RingsColor").opacity(0.3 * 0.8), Color("RingsColor").opacity(0)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: 100, endRadius: 300)
+                        RadialGradient(gradient: Gradient(colors: [Color("RingsColor").opacity(opacity), Color("RingsColor").opacity(0)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: 100, endRadius: 300)
                     )
                     .frame(width: size, height: size)
             }

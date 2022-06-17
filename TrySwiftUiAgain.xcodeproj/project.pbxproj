@@ -18,6 +18,7 @@
 		0A3D895C281B382B0096AE29 /* TrySwiftUiAgainUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D895B281B382B0096AE29 /* TrySwiftUiAgainUITestsLaunchTests.swift */; };
 		0A488167283BCE610052F132 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A488166283BCE610052F132 /* TextViews.swift */; };
 		0A68B7082847AD160064B256 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A68B7072847AD160064B256 /* BackgroundView.swift */; };
+		0AB16B09285BFA2B001C02E6 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB16B08285BFA2B001C02E6 /* PointsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		0A3D895B281B382B0096AE29 /* TrySwiftUiAgainUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrySwiftUiAgainUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A488166283BCE610052F132 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		0A68B7072847AD160064B256 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		0AB16B08285BFA2B001C02E6 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				0A488166283BCE610052F132 /* TextViews.swift */,
 				0A112714284599F6000A2A3E /* RoundViews.swift */,
 				0A68B7072847AD160064B256 /* BackgroundView.swift */,
+				0AB16B08285BFA2B001C02E6 /* PointsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				0A3D8941281B38290096AE29 /* ContentView.swift in Sources */,
 				0A488167283BCE610052F132 /* TextViews.swift in Sources */,
 				0A15652D282CA12800F74C23 /* Game.swift in Sources */,
+				0AB16B09285BFA2B001C02E6 /* PointsView.swift in Sources */,
 				0A3D893F281B38290096AE29 /* TrySwiftUiAgainApp.swift in Sources */,
 				0A112715284599F7000A2A3E /* RoundViews.swift in Sources */,
 			);

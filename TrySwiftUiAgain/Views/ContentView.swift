@@ -19,9 +19,10 @@ struct ContentView: View {
             BackgroundView(game: $game)
             VStack {
                 InstructionView(game: $game)
-                SliderView(sliderValue: $sliderValue)
+                    .padding(.bottom, 100)
                 HitMeButton(sliderValue: $sliderValue, isAlertVisible: $isAlertVisible, whosThereIsVisible: $whosThereIsVisible, game: $game)
             }
+            SliderView(sliderValue: $sliderValue)
         }
     }
 }
@@ -30,7 +31,7 @@ struct InstructionView: View{
     @Binding var game: Game
     var body: some View{
         VStack{
-            InstrunctionText(text: "Solo tienes que hacer scrol!!!")
+            InstrunctionText(text: "Put the bullseye as close as you can to 🎯🎯🎯")
             BigNumberText(text: String(game.target))
         }
     }
@@ -94,10 +95,13 @@ struct HitMeButton: View{
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.light)
+        ContentView()
+            .previewLayout(.fixed(width: 568, height: 320))
         ContentView()
             .preferredColorScheme(.dark)
-            .previewLayout(.fixed(width: 580, height: 320))
+        ContentView()
+            .preferredColorScheme(.dark)
+            .previewLayout(.fixed(width: 568, height: 320))
     }
 }
 
